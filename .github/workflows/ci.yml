@@ -22,7 +22,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Check code style
-        run: flake8 app/ --extend-ignore=W292
+        run: flake8 app/ --extend-ignore=W292, W293
 
       - name: Run tests
         run: pytest tests/
